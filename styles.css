@@ -1,0 +1,9 @@
+.container{
+    width: auto;
+    height: 100vh;
+    
+}
+#mapa{
+  width: 100vw;
+  height: 800px;
+}
