@@ -33,8 +33,8 @@ async function getLocation(latitude, longitude) {
   const data = await response.json();
   
  /* let map = L.map('mapa').setView([32.485075,-116.810834], 16); */
- let map = L.map('mapa').setView([32.485075,-116.810834], 16);
- /* let map = L.map('mapa').setView([latitude, longitude], 16); */
+ /* let map = L.map('mapa').setView([32.485075,-116.810834], 16); */
+ let map = L.map('mapa').setView([latitude, longitude], 16); 
  
 
  var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { 
