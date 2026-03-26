@@ -12,3 +12,18 @@
   background-color: red;
 }
 
+
+
+
+.controls{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-maps{  
+  background-color: rgb(27, 223, 27);
+}
+
+.btn-delete{  
+  background-color: rgba(214, 41, 41, 0.74);
+}

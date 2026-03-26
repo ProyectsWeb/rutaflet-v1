@@ -87,18 +87,31 @@ const grouped = {};
     <div class="recuadro">       
      <span class="no-cliente"><b>${grouped[key].clientes}</b></span><br>
      <span class="names">${grouped[key].nameClients}</span><br> 
-     <span class="coords"> ${lat}, ${lng} </span><br>   
-     <button class="btn-delete">Eliminar</button>
+     <span class="coords"> ${lat}, ${lng} </span><br> 
+      <div class="controls">
+       <button class="btn-maps">Abrir en Maps 📍 </button>  
+       <button class="btn-delete">Eliminar</button>
+      </div>
     </div>      
    `);
 
 
-      
+      function openInMaps(lat, lng) {
+  const url = `https://www.google.com/maps?q=${lat},${lng}`;
+  window.open(url, '_blank');
+}
 
         
   marker.on('popupopen', (e) => {
     console.log(e)
     const el = e.popup.getElement();
+
+
+    el.querySelector('.btn-maps').addEventListener('click', () => {
+    const { lat, lng } = marker.getLatLng();
+    openInMaps(lat, lng);
+   });
+
 
     el.querySelector('.btn-delete').addEventListener('click', (event)=>{
       console.log(event)
@@ -107,6 +120,12 @@ const grouped = {};
         });
     });
      
+
+function openInMaps(lat, lng) {
+  const url = `https://www.google.com/maps?q=${lat},${lng}`;
+  window.open(url, '_blank');
+}
+
     /* function removeMarkerFromArray(marker) {
      const index = markers.indexOf(marker);
      console.log(index)
