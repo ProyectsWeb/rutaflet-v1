@@ -1,0 +1,86 @@
+.container{
+    width: auto;
+    height: 100vh;
+    
+}
+#mapa{
+  width: 100vw;
+  height: 800px;
+}
+
+.red{
+  background-color: red;
+}
+
+
+
+.controls{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-maps{  
+  color: #fff;
+  background-color: #05668d;
+}
+
+.btn-delete{   
+   color: #fff;
+  background-color: #960200;
+}
+
+.marcar-visitado{
+  color: #fff; 
+  background-color: #143109;
+  width: auto;
+}
+
+ #lista{  
+  height: 200px;
+} 
+
+
+#procesar{
+  width: 10rem;
+  height: 3rem;
+  margin: 1rem;
+  color: #fff;
+  background-color: blue;
+   font-size: 1.3rem;
+ 
+}
+#reset-visitas{
+  width: 10rem;
+  height: 3rem;
+  margin: 1rem;
+  color: #fff;
+  background-color: red;
+   font-size: 1.3rem;
+}
+
+.box-carga{
+  width: 80%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.btn-controls{  
+  width: 40%;
+  display: flex;
+  justify-content: space-around; 
+}
+
+
+.frecuencia{  
+  display: flex;
+  justify-content:space-between;
+}
+.periodos{
+  width: 100%; 
+  text-align: end;
+  margin-left: 0.5rem;
+}
